@@ -38,7 +38,8 @@ Returns:
         "displayName": "Theresa Beaudet",
         "openLegalId": "6e3a2eff-c569-44d0-b90d-7aeb0eec7857",
         "states": ["CA"],
-        "counties": ["los angeles"]
+        "counties": ["los angeles"],
+        "firstYearOnBench": "1993"
     }
 ]
 ```
