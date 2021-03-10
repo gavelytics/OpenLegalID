@@ -26,7 +26,7 @@ _A company that posses legal documents and aims to identify participants from th
 
 ## Examples
 
-Looking for **Theresa Beaudet** in the **Los Angeles** jurisdiction:
+Looking for judge **Theresa Beaudet** in the **Los Angeles** jurisdiction:
 
 `https://api.openlegalid.org/judge?name=theresa%20beaudet&state=ca&county=los%20angeles`
 
