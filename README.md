@@ -6,6 +6,10 @@ The OpenLegalID project aims to create a database of civil litigation participan
 
 With this publicly accessible database both parties can utilize the same unique identifier for a case participant. Here are a couple of ways that this could be implemented:
 
+## Using an OpenLegalID
+
+Any communication between software applications can reference an OpenLegalID and assuming both parties support them, the specific resource can be returned with no searching or selection. It is up to each implementer to connect their resource with the appropriate OpenLegalID.
+
 ## Usage Scenarios
 
 ### Legal Data Provider
@@ -19,7 +23,3 @@ _A company that posses legal documents and aims to identify participants from th
 1. Send a request to: `api.openlegalid.org/[TYPE]?name=NAME_TO_FIND`
 1. Receive an array of matched participants with some baseline identifying data
 1. Choose the most relevant result and store the returned OpenLegalID in your database alongside the document/participant/etc.
-
-#### **Using an OpenLegalID**
-
-Any communication between software applications can reference an OpenLegalID and assuming both parties support them, the specific resource can be returned with no searching or selection.
