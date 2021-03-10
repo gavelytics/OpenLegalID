@@ -4,11 +4,11 @@
 
 The OpenLegalID project aims to create a database of civil litigation participants with unique identifiers for judges, lawyers, law firms, and experts. Many companies and lawfirms (us included) cobble together proprietary IDs from private companies to attempt to make a consistant and positive exchange between APIs.
 
-With this publicly accessible database both parties can utilize the same unique identifier for a case participant. Here are a couple of ways that this could be implemented:
+With this publicly accessible database all parties can utilize the same unique identifier for a case participant. Here are a couple of ways that this could be implemented:
 
 ## Using an OpenLegalID
 
-Any communication between software applications can reference an OpenLegalID and assuming both parties support them, the specific resource can be returned with no searching or selection. It is up to each implementer to connect their resource with the appropriate OpenLegalID.
+Any communication between software applications can reference an OpenLegalID and assuming both parties support them, the specific resource can be returned with no searching or selection. It is up to each implementer to connect their resource with the appropriate OpenLegalID. The project aims to provide specificly identifying information about the participant _that will never change_. Any data that needs to be curated and maintained is not a good fit for this project.
 
 ## Usage Scenarios
 
