@@ -20,7 +20,7 @@ _A company that posses legal documents and aims to identify participants from th
 
 1. Extract a name from the source data.
 1. Identify the participant type (judge, lawyer, lawfirm, or expert)
-1. Send a request to: `api.openlegalid.org/[TYPE]?name=NAME_TO_FIND`
+1. Send a request to: `https://api.openlegalid.org/[TYPE]?name=NAME_TO_FIND`
 1. Receive an array of matched participants with some baseline identifying data
 1. Choose the most relevant result and store the returned OpenLegalID in your database alongside the document/participant/etc.
 
@@ -28,7 +28,7 @@ _A company that posses legal documents and aims to identify participants from th
 
 Looking for **Theresa Beaudet** in the **Los Angeles** jurisdiction:
 
-`api.openlegalid.org/judge?name=theresa%20beaudet&state=ca&county=los%20angeles`
+`https://api.openlegalid.org/judge?name=theresa%20beaudet&state=ca&county=los%20angeles`
 
 Returns:
 
