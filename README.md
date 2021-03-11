@@ -2,7 +2,7 @@
 
 ## Goals of the Project
 
-The OpenLegalID project aims to create an open-source database and api containing civil litigation participants with unique identifiers for judges, lawyers, law firms, and experts. Many companies and lawfirms (us included) cobble together proprietary IDs from private companies to attempt to make a consistant and positive exchange between APIs.
+The OpenLegalID project aims to create an open-source database and api containing litigation participants with unique identifiers for judges, lawyers, law firms, and experts. Many companies and lawfirms (us included) cobble together proprietary IDs from private companies to attempt to make a consistant and positive exchange between APIs.
 
 ## Best Case Scenario
 
