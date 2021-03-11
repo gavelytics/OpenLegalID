@@ -8,7 +8,7 @@ Positively identifying participants across data services currently requires comp
 
 ## Guiding Principles
 
-The database will include a small amount of identifying data with each participant. The schema will likely be different for each participant type (judges, lawyers, etc). Each entities accompanying data should follow these principles:
+The database will include a small amount of identifying data with each participant. The schema will likely be different for each participant type (judges, lawyers, etc). Each participant's accompanying data should follow these principles:
 
 1. Each entity will include a few, simple data points that, in combination with their name, will likely be unique to the person or company. This combination should give a high probability of a positive match.
 1. The indentifying information must be data that will _never change_. This could be historical data such as counties they've been active in, bar numbers, first year on the bench, etc. etc.
