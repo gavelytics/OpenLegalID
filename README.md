@@ -1,6 +1,6 @@
 # OpenLegalID Proposal
 
-## Description
+## Goals of the Project
 
 The OpenLegalID project aims to create a database of civil litigation participants with unique identifiers for judges, lawyers, law firms, and experts. Many companies and lawfirms (us included) cobble together proprietary IDs from private companies to attempt to make a consistant and positive exchange between APIs.
 
@@ -35,13 +35,22 @@ Returns:
 ```json
 [
     {
-        "displayName": "Theresa Beaudet",
+        "name": "Theresa Beaudet",
         "openLegalId": "6e3a2eff-c569-44d0-b90d-7aeb0eec7857",
-        "states": ["CA"],
-        "counties": ["los angeles"],
+        "activeLocations": [
+            {
+                "county": "los angeles",
+                "state": "CA"
+            }
+        ],
         "firstYearOnBench": "1993"
     }
 ]
 ```
 
-_This needs more identifiable information. Perhaps first year on bench or something else that will never change._
+## Guiding Principles
+
+The database will include a small amount of identifying data with each participant. The schema will likely be different for each participant type (judges, lawyers, etc). Each entities accompanying data should follow these principles:
+
+1. Each entity will include a few, simple data points that, in combination with their name, will likely be unique to the person or company. This combination should give a high probability of a positive match.
+1. The indentifying information must be data that will _never change_. This could be historical data such as counties they've been active in, bar numbers, first year on the bench, etc. etc.
