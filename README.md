@@ -2,13 +2,15 @@
 
 ## Goals of the Project
 
-The OpenLegalID project aims to create an open-source database and api containing litigation participants with unique identifiers for judges, lawyers, law firms, and experts. Many companies and lawfirms (us included) cobble together proprietary IDs from private companies to attempt to make a consistant and positive exchange between APIs.
+The OpenLegalID resource aims to create common and freely-available unique identifiers for litigation participants that can be shared throughout the industry. It consists of an open source database and api that serves IDs for judges, lawyers, law firms, and experts seeded by well maintained legal data providers.
+
+Positively identifying participants across data services currently requires companies and firms to maintain multiple proprietary IDs from various providers and know when to use which ID for a data request. A singular, common OpenLegalID would vastly simplify workflows and create consistant and confident exchanges between APIs.
 
 ## Best Case Scenario
 
-If legal data providers store the OpenLegalID along with each participant available from their service, data can be exchanged freely and with confidence between customers and other providers by supplying the OpenLegalID for the participants in question.
+If legal data providers store the OpenLegalID along with their identified participants available in their service their customers can make requests with confidence between customers and other providers by supplying the OpenLegalID for the participants in question.
 
-With this publicly accessible database all parties can utilize the same unique identifier for a case participant. Here are a couple of ways that this could be implemented:
+With this publicly accessible ID, all parties can utilize the same unique identifier for a case participant. Here are a couple of ways that this could be implemented:
 
 ## Using an OpenLegalID
 
