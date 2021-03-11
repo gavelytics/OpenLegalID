@@ -6,10 +6,6 @@ The OpenLegalID resource aims to create common and freely-available unique ident
 
 Positively identifying participants across data services currently requires companies and firms to maintain multiple proprietary IDs from various providers and know when to use which ID for a data request. A singular, common OpenLegalID would vastly simplify workflows and create consistant and confident exchanges between APIs.
 
-## Best Case Scenario
-
-If legal data providers store the OpenLegalID along with their identified participants available in their service their customers can make requests with confidence between customers and other providers by supplying the OpenLegalID for the participants in question.
-
 ## Guiding Principles
 
 The database will include a small amount of identifying data with each participant. The schema will likely be different for each participant type (judges, lawyers, etc). Each entities accompanying data should follow these principles:
