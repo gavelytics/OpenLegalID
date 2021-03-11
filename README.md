@@ -10,11 +10,16 @@ Positively identifying participants across data services currently requires comp
 
 If legal data providers store the OpenLegalID along with their identified participants available in their service their customers can make requests with confidence between customers and other providers by supplying the OpenLegalID for the participants in question.
 
-With this publicly accessible ID, all parties can utilize the same unique identifier for a case participant. Here are a couple of ways that this could be implemented:
+## Guiding Principles
+
+The database will include a small amount of identifying data with each participant. The schema will likely be different for each participant type (judges, lawyers, etc). Each entities accompanying data should follow these principles:
+
+1. Each entity will include a few, simple data points that, in combination with their name, will likely be unique to the person or company. This combination should give a high probability of a positive match.
+1. The indentifying information must be data that will _never change_. This could be historical data such as counties they've been active in, bar numbers, first year on the bench, etc. etc.
 
 ## Using an OpenLegalID
 
-Any communication between software applications can reference an OpenLegalID and assuming both parties support them, the specific resource can be returned with no searching or selection. It is up to each implementer to connect their resource with the appropriate OpenLegalID. The project aims to provide specificly identifying information about the participant _that will never change_. Any data that needs to be curated and maintained is not a good fit for this project.
+Any communication between software applications can include an OpenLegalID and assuming both parties support them, the specific resource can be returned with no searching or selection. It is up to each implementer to connect their resource with the appropriate OpenLegalID. The project aims to provide specificly identifying information about the participant _that will never change_. Any data that needs to be curated and maintained is not a good fit for this project.
 
 ## Usage Scenarios
 
@@ -82,13 +87,6 @@ Returns:
     }
 ]
 ```
-
-## Guiding Principles
-
-The database will include a small amount of identifying data with each participant. The schema will likely be different for each participant type (judges, lawyers, etc). Each entities accompanying data should follow these principles:
-
-1. Each entity will include a few, simple data points that, in combination with their name, will likely be unique to the person or company. This combination should give a high probability of a positive match.
-1. The indentifying information must be data that will _never change_. This could be historical data such as counties they've been active in, bar numbers, first year on the bench, etc. etc.
 
 ## Contributing
 
