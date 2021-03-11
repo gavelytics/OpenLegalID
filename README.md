@@ -40,10 +40,9 @@ Returns:
         "activeLocations": [
             {
                 "county": "los angeles",
-                "state": "CA"
+                "state": "ca"
             }
-        ],
-        "firstYearOnBench": "1993"
+        ]
     }
 ]
 ```
