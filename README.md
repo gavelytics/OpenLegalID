@@ -55,9 +55,40 @@ Returns:
 ]
 ```
 
+Looking for lawyer **James R. Francis** in the **Broward, Texas** jurisdiction:
+
+`https://api.openlegalid.org/lawyer?name=James%20R.%20Francis&state=tx&county=broward`
+
+Returns:
+
+```json
+[
+    {
+        "name": "James R. Francis",
+        "openLegalId": "6e3a2eff-c569-44d0-b90d-7aeb0eec7857",
+        "activeLocations": [
+            {
+                "county": "broward",
+                "state": "tx"
+            },
+            {
+                "county": "dallas",
+                "state": "tx"
+            }
+        ],
+        "abaNumber": "324985"
+    }
+]
+```
+
 ## Guiding Principles
 
 The database will include a small amount of identifying data with each participant. The schema will likely be different for each participant type (judges, lawyers, etc). Each entities accompanying data should follow these principles:
 
 1. Each entity will include a few, simple data points that, in combination with their name, will likely be unique to the person or company. This combination should give a high probability of a positive match.
 1. The indentifying information must be data that will _never change_. This could be historical data such as counties they've been active in, bar numbers, first year on the bench, etc. etc.
+
+## Contributing
+
+-   If you've created a large, well-maintained data set of litigation participants that has been deduped, it may be a suitable addition to the public api.
+-   The project accepts monetary donations If you frequently use the api to power parts of your business. These contributions go to help with server costs, data review, and api development.
